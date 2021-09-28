@@ -1,8 +1,44 @@
+@import "../../global.scss";
+
 .topbar {
   width: 100%;
   height: 70px;
-  background-color: #15023a;
+  background-color: white;
+  color: $mainColor;
   position: fixed;
   top: 0;
   z-index: 2;
+
+  .wrapper{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left{
+
+      .logo{
+        font-size: 35px;
+        font-weight: 510;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .right{
+      .humburger{
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span{
+          width: 100%;
+          height: 3px;
+          background-color: $mainColor;
+        }
+      }
+    }
+  }
 }
