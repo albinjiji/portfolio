@@ -12,7 +12,7 @@ export default function Intro() {
        backSpeed: 60,
        placeholder: false,
        cursorChar: "_",
-       strings: [ 'React.js' ] });
+       strings: [ 'React' ] });
   }, []);
 
   return (
