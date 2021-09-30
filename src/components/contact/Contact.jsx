@@ -1,5 +1,5 @@
 import "./contact.scss"
-import img from "../images/contact1.jpg"
+import img from "../images/connect1.jpg"
 import { useState } from "react";
 
 export default function Contact() {
@@ -13,6 +13,9 @@ export default function Contact() {
         <div className="contact" id="contact">
             <div className="left">
                 <img src={img} alt="" />
+                <div className="footer">
+                    <h3>Albin Jiji © 2021 Powerd by React.Js</h3>
+                </div>
             </div>
             <div className="right">
                 <h2>Contact</h2>
@@ -23,6 +26,7 @@ export default function Contact() {
                     {message && <span>Thanks,</span>}
                 </form>
             </div>
+            
         </div>
     )
 }
