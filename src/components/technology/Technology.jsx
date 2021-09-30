@@ -6,7 +6,7 @@ import img6 from "../images/react.png"
 import img7 from "../images/php.png"
 import img8 from "../images/python.png"
 import img9 from "../images/git.png"
-import img10 from "../images/linux.png"
+import img10 from "../images/mysql.png"
 
 
 export default function Technology() {
@@ -44,7 +44,7 @@ export default function Technology() {
                 </div>
                 <div className="item">
                     <img src={img10} alt="" />
-                    <h3>Linux</h3>
+                    <h3>MySQL</h3>
                 </div>
             </div>
         </div>

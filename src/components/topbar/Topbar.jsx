@@ -19,5 +19,5 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       </div>
     </div>
   </div>
-  );
+  ); 
 }
