@@ -12,9 +12,8 @@ export default function Contact() {
     return (
         <div className="contact" id="contact">
             <div className="left">
+            <div className="imgContainer">
                 <img src={img} alt="" />
-                <div className="footer">
-                    <h3>Albin Jiji © 2021 Powerd by React.Js</h3>
                 </div>
             </div>
             <div className="right">

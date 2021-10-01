@@ -1,11 +1,23 @@
+@import "../../global.scss";
+
+
 .testimonials {
   background-color: white;
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left{
     flex: 0.6;
     background-color: white;
     overflow: hidden;
+
+    @include mobile{
+      flex: 0.4;
+    }
 
     h1{
       font-size: 40px;
@@ -13,9 +25,20 @@
       margin-left: 30px;
       margin-top: 30px;
 
+      @include mobile{
+        align-items: center;
+        margin-top: 0px;
+        font-size: 20px;
+        margin-left: 70px;
+      }
+
       span{
         color: #008080;
         font-size: 60px;
+
+        @include mobile{
+          font-size: 30px;
+        }
       }
     }
 
@@ -27,6 +50,12 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
+
+      @include mobile{
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+      }
   
       .item{
         width: 160px;
@@ -38,6 +67,14 @@
         justify-content: center;
         position: relative;
         overflow: hidden;
+
+        @include mobile{
+          width: 60px;
+          height: 60px;
+          margin-top: 10px;
+          flex-wrap: wrap;
+          position: relative;
+        }
   
     
   
@@ -47,6 +84,11 @@
           height: 70%;
           object-fit: cover;
           z-index: 1;
+
+          @include mobile{
+            width: 60%;
+            height: 60%;
+          }
         }      
       }
     }
@@ -58,6 +100,12 @@
     font-size: 20px;
     font-weight: 300;
 
+    @include mobile{
+      margin-top: 10px;
+      font-size: 15px;
+      margin-left: 0px;
+    }
+
     .text{
       margin-left: 20px;
     }
@@ -68,10 +116,23 @@
     background-color: white;
     overflow: hidden;
 
+    @include mobile{
+      align-items: center;
+      flex: 0.6;
+    }
+
 
     .imgContainer{
       width: 550px;
       height: 550px;
+      margin-right: 30px;
+
+      @include mobile{
+        align-items: center;
+        margin-top: 0px;
+        width: 350px;
+        height: 350px;
+      }
 
       img{
         width: 100%;

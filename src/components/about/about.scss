@@ -1,6 +1,15 @@
+@import "../../global.scss";
+
+
 .portfolio {
   background-color: white;
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
 
   .left{
     flex: 0.5;
@@ -14,10 +23,19 @@
       margin-left: 20px;
       justify-content: center;
 
+      @include mobile{
+        margin-top: -80px;
+      }
+
       h1{
         margin-left: 20px;
         margin-top: 110px;
         font-size: 30px;
+
+        @include mobile{
+          overflow: hidden;
+          margin-top: 90px;
+        }
 
         span{
           font-size: 50px;
@@ -34,6 +52,15 @@
         text-indent: 20px;
         margin-left: 20px;
         justify-content: center;
+
+        @include mobile{
+          align-items: center;
+          margin-right: 20px;
+          margin-top: -2px;
+          overflow: hidden;
+          font-size: 12px;
+          justify-content: center;
+        }
       }
     }
   }
@@ -47,6 +74,14 @@
     .imgContainer{
       width: 550px;
       height: 550px;
+
+      @include mobile{
+        align-items: center;
+        margin-top: -30px;
+        width: 300px;
+        height: 300px;
+
+      }
 
       img{
         width: 100%;

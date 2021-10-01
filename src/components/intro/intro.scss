@@ -1,6 +1,14 @@
+@import "../../global.scss";
+
+
 .intro {
   background-color: white;
   display: flex;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left{
     flex: 0.5;
@@ -11,6 +19,13 @@
       height: 550px;
       margin-top: 20px;
       margin-left: 20px;
+
+      @include mobile{
+        align-items: center;
+        margin-top: 30px;
+        width: 350px;
+        height: 350px;
+      }
 
       img{
         width: 100%;
@@ -31,16 +46,32 @@
       margin-left: 70px;
       display: flex;
 
+      @include mobile{
+        padding-left: 0;
+        margin-right: 50px;
+        align-items: center;
+        margin-left: 0px;
+      }
+
 
       h1{
         font-size: 70px;
         margin: 30px 0;
+
+        @include mobile{
+          font-size: 30px;
+          margin: 0 0;
+        }
       }
       h2{
         font-size: 40px;
       }
       h3{
         font-size: 30px;
+
+        @include mobile{
+          font-size: 20px;
+        }
       }
 
       span{
