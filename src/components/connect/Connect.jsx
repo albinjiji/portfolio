@@ -28,7 +28,7 @@ export default function Connect() {
         <h4> <IoMdMail />albinjiji4@gmail.com    <span className="text"><FaPhoneAlt /> +91 9207603364</span></h4>
       </div>
       <div className="down">
-        <a href={fil}><button>Download Resume</button></a>
+        <a href="http://www.google.com"><button>Download Resume</button></a>
       </div>
       </div>      
       <div className="right">
