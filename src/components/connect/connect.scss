@@ -111,6 +111,19 @@
     }
   }
 
+  button{
+    width: 160px;
+    height: 40px;
+    color: white;
+    background-color: #008080;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+
   .right{
     flex: 0.4;
     background-color: white;

@@ -3,6 +3,7 @@ import img from "../images/contact1.jpg"
 import img1 from "../images/github.png"
 import img2 from "../images/link.png"
 import img3 from "../images/insta.png"
+import fil from "../images/Resume_Albin_Jiji.pdf";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa"
 
@@ -25,6 +26,9 @@ export default function Connect() {
           </div>
       <div>
         <h4> <IoMdMail />albinjiji4@gmail.com    <span className="text"><FaPhoneAlt /> +91 9207603364</span></h4>
+      </div>
+      <div className="down">
+        <a href={fil}><button>Download Resume</button></a>
       </div>
       </div>      
       <div className="right">
