@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 
 export default function Contact() {
+  const [done, setDone] = useState(false);
   function sendMail(e) {
     e.preventDefault();
 
@@ -16,6 +17,7 @@ export default function Contact() {
       )
       .then((res) => {
         console.log(res);
+        setDone(true);
       })
       .catch((err) => console.log(err));
   }
@@ -33,6 +35,7 @@ export default function Contact() {
           <input type="text" placeholder="Email" name="email" />
           <textarea placeholder="Message" name="message"></textarea>
           <button type="submit">Send</button>
+          {done && "Thank You"}
         </form>
       </div>
     </div>
