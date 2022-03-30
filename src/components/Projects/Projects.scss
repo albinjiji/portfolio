@@ -1,0 +1,122 @@
+@import "../../global.scss";
+
+.projects {
+  display: flex;
+  background-color: white;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  .head {
+    font-weight: 300;
+    margin-top: -35%;
+    font-size: 40px;
+
+    @include mobile {
+      font-size: 30px;
+      margin-top: -70%;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+
+    @include mobile {
+      height: 500px;
+      justify-content: center;
+      margin-top: 35%;
+    }
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+
+      @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .item {
+        width: 30%;
+        height: 80%;
+        cursor: pointer;
+        background-image: linear-gradient(
+          to right top,
+          #008080,
+          #469797,
+          #6fafaf,
+          #95c7c7,
+          #bae0e0
+        );
+        border-radius: 20px;
+
+        @include mobile {
+          width: 35%;
+          height: 30%;
+          margin-top: 4%;
+        }
+
+        .left {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          .leftContainer {
+            width: 90%;
+            height: 60%;
+            display: flex;
+            margin-top: 2%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            .imgContainer {
+              width: 40%;
+              height: 80%;
+              border-radius: 20%;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include mobile {
+                width: 30%;
+                height: 60%;
+              }
+
+              img {
+                width: 100px;
+
+                @include mobile {
+                  width: 50px;
+                }
+              }
+            }
+
+            h2 {
+              color: white;
+              font-size: 28px;
+              margin-top: 2%;
+              overflow: hidden;
+
+              @include mobile {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
